@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Noticias Geek</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'%3E%3Ctext y='58' font-size='60'%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Noticias Geek</h1>
+      <p id="bienvenida">
+        ¡Bienvenido! Selecciona una sección para ver las últimas noticias de
+        videojuegos, películas o tecnología.
+      </p>
+    </header>
+    <nav>
+      <button id="btn-videojuegos" onclick="showSection('videojuegos')">
+        Videojuegos
+      </button>
+      <button id="btn-peliculas" onclick="showSection('peliculas')">
+        Películas
+      </button>
+    </nav>
+    <main>
+      <section id="videojuegos" class="news-section"></section>
+      <section
+        id="peliculas"
+        class="news-section"
+        style="display: none"
+      ></section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
