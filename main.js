@@ -36,8 +36,6 @@ let currentQuery = {
   peliculas: "",
 };
 
-// Elimino funciones y lógica de tecnología
-// Mejoro renderVideojuegos y renderPeliculas para visualización más atractiva
 function renderVideojuegos(games) {
   if (!games || games.length === 0) {
     return `<div class="no-results">No se encontraron videojuegos.</div>`;
@@ -219,7 +217,6 @@ function resetSearch(section) {
   refreshSection(section);
 }
 
-// Limpio inicialización y refresco
 function refreshAll() {
   fetchVideojuegos(currentPage.videojuegos, currentQuery.videojuegos);
   fetchPeliculas(currentPage.peliculas, currentQuery.peliculas);
